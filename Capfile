@@ -1,4 +1,5 @@
 require 'recap/recipes/ruby'
+require 'yaml'
 
 settings_yml_path = "config/deploy.yml"
 config = YAML::load(File.open(settings_yml_path))
