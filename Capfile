@@ -1,7 +1,7 @@
 require 'recap/recipes/ruby'
 require 'yaml'
 
-settings_yml_path = "config/deploy.yml"
+settings_yml_path = 'config/deploy.yml'
 config = YAML::load(File.open(settings_yml_path))
 
 set :application, application = config['production']['application']
